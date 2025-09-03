@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: processunit
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python processunit.py"
